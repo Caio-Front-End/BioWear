@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioWear</title>
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header id="header" class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="logo d-flex align-items-center pb-2">
+                <img src="./media/logo.png" alt="logo da loja">
+                <h1 class="navbar-brand m-0 section-title">BioWear</h1>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link d-flex" href="#sobre"><box-icon class="me-1" name='home-alt-2' color="#2c442c"></box-icon>Início</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link d-flex" href="#produtos"><box-icon class="me-1" name='shopping-bag' color="#2c442c"></box-icon>Produtos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link d-flex" href="#eventos"><box-icon class="me-1" name='calendar-event' color="#2c442c"></box-icon>Saiba mais</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link d-flex" href="#contato"><box-icon class="me-1" name='support' color="#2c442c"></box-icon>Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="header">
+        <section id="sobre">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./media/carousel-desconto.png" alt="slide promoção de roupa">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./media/carousel-inverno.png" alt="slide modelos de inverno">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./media/carousel-floresta.png" alt="slide roupa 100% ecoologica">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5" id="produtos">
+            <div class="container">
+                <h2 class="pb-4">Nossos produtos</h2>
+
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <!-- Tabs começam aqui -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#camisetas" type="button" role="tab" aria-controls="home" aria-selected="true">Camisetas</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#jaquetas" type="button" role="tab" aria-controls="profile" aria-selected="false">Jaquetas</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#calcas" type="button" role="tab" aria-controls="messages" aria-selected="false">Calças</button>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-success ms-3">
+                        <i class='bx bx-filter'></i> Filtrar
+                    </button>
+                </div>
+
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="camisetas" role="tabpanel">
+                        <div class="row mt-3">
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/camisa/camisa-cropped-pretol-marinho-.webp" alt="Title">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Camisa Cropped preto marinho</h4>
+                                        <strong>R$ 180,00</strong>
+                                        <p class="card-text">5x sem juros R$ 32.00 <br> -5% boleto ou pix <strong>R$ 180,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/camisa/camisa-manga-curta.webp" alt="Title">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Camisa manga curta preta</h4>
+                                        <strong>R$ 150,00</strong>
+                                        <p class="card-text">5x sem juros R$ 30,00 <br> -5% boleto ou pix <strong>R$ 150,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/camisa/camisa-oversized-off-white.webp" alt="Title">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Camisa Oversized off-white</h4>
+                                        <strong>R$ 200,00</strong>
+                                        <p class="card-text">5x sem juros R$ 40,00 <br> -5% boleto ou pix <strong>R$ 200,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/camisa/camisa-oversized-preta-.webp" alt="Title">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Camisa Oversized preta</h4>
+                                        <strong>R$ 200,00</strong>
+                                        <p class="card-text">5x sem juros R$ 40,00 <br> -5% boleto ou pix <strong>R$ 200,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="jaquetas" role="tabpanel">
+                        <div class="row mt-3">
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/jaqueta/jaqueta-jeans-oversized-andiroba-azul-medio.jpg" alt="#">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Jaqueta Jeans Oversized azul</h4>
+                                        <strong>R$ 280,00</strong>
+                                        <p class="card-text">5x sem juros R$ 56,00<br> -5% boleto ou pix <strong>R$ 280,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/jaqueta/jaqueta-jeans-oversized-andiroba-bege.webp" alt="#">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Jaqueta Jeans Oversized bege</h4>
+                                        <strong>R$ 280,00</strong>
+                                        <p class="card-text">5x sem juros R$ 56,00<br> -5% boleto ou pix <strong>R$ 280,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/jaqueta/jaqueta-jeans-oversized-andiroba-marrom-escuro.webp" alt="#">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Jaqueta Jeans Oversized Marrom</h4>
+                                        <strong>R$ 300,00</strong>
+                                        <p class="card-text">5x sem juros R$ 60,00 <br> -5% boleto ou pix <strong>R$ 300,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/jaqueta/jaqueta-jeans-oversized-andiroba-preta.webp" alt="#">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Jaqueta Jeans Oversized Preta</h4>
+                                        <strong>R$ 280,00</strong>
+                                        <p class="card-text">5x sem juros R$ 56,00<br> -5% boleto ou pix <strong>R$ 280,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="calcas" role="tabpanel">
+                        <div class="row mt-3">
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/calca/calca-jeans-mom-jequitiba-azul.webp" alt="#">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Calça Jeans Azul</h4>
+                                        <strong>R$ 180,00</strong>
+                                        <p class="card-text">5x sem juros R$ 36,00<br> -5% boleto ou pix <strong>R$ 180,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/calca/calca-jeans-wide-leg-buriti-azul-claro.webp" alt="#">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Calça Jeans Wide-Leg azul claro</h4>
+                                        <strong>R$ 220,00</strong>
+                                        <p class="card-text">5x sem juros R$ 44,00<br> -5% boleto ou pix <strong>R$ 220,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/calca/calca-jeans-slouchy-cacau-bege.webp" alt="#">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Calça Jeans reta bege</h4>
+                                        <strong>R$ 200,00</strong>
+                                        <p class="card-text">5x sem juros R$ 40,00<br> -5% boleto ou pix <strong>R$ 200,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
+                                <div class="card border-0 text-center produto-card">
+                                    <img class="card-img-top" src="./media/calca/calca-pantalona-preta-.webp" alt="#">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Calça Pantalona Preta</h4>
+                                        <strong>R$ 220,00</strong>
+                                        <p class="card-text">5x sem juros R$ 44,00<br> -5% boleto ou pix <strong>R$ 220,00</strong></p>
+                                        <button class="btn btn-success w-100 mt-2">Adicionar ao carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section id="eventos">
+            <div class="container">
+                <h2 class="">Saiba mais</h2>
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="d-block w-100" src="./media/logo.png" alt="logo da loja">
+                        </div>
+                        <div class="col-md-7 pt-5">
+                            <h3 class="section-title">Quem <span class="span-style">somos</span></h3>
+                            <p>A BioWear é uma marca de roupas criada com o propósito de unir moda e sustentabilidade. Surgimos da vontade de mostrar que é possível vestir bem sem agredir o meio ambiente, oferecendo peças modernas e conscientes.
+                            </p>
+                            <h3 class="section-title">O que <span class="span-style">fazemos</span></h3>
+                            <p>Produzimos roupas com materiais orgânicos e reciclados, utilizando processos que reduzem o impacto ambiental. Além disso, parte de nossas vendas é destinada a projetos de preservação, como o plantio de árvores e iniciativas de reciclagem.</p>
+                            <button type="button">
+                                <a href="#contato">SAIBA MAIS</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="mb-5">
+            <div class="container">
+                <h2 class="">Contato</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+                        <form>
+                            <div class="form-group">
+                                <label for="text">Nome completo</label>
+                                <input class="form-control mb-1" type="text" placeholder="Insira seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input class="form-control mb-1" type="email" placeholder="Insira seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel">WhatsApp</label>
+                                <input class="form-control mb-1" type="tel" placeholder="Insira seu número">
+                            </div>
+                            <button type="button" class="form-button btn btn-primary btn-sm w-100 mt-3">
+                                ENVIAR
+                            </button>
+                        </form>
+                    </div>
+                    <div id="social" class="col-sm-12 col-md-12 col-lg-6 text-center d-block">
+                        <h4 class=" mb-3">Siga nossas redes sociais</h4>
+                        <ul class="d-flex justify-content-center pe-3 mb-5">
+                            <li class="pe-3"><a href="#"><box-icon name='facebook-square' type='logo' size="md"></box-icon></a></li>
+                            <li class="pe-3"><a href="#"><box-icon name='instagram-alt' type='logo' size="md"></box-icon></a></li>
+                            <li class="pe-3"><a href="#"><box-icon name='twitter' type='logo' size="md"></box-icon></a></li>
+                        </ul>
+                        <h4 class=" mb-3">Endereço</h4>
+                        <p>Rua Arthur, 320 - São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
