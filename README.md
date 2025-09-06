@@ -17,9 +17,11 @@ O principal objetivo da Biowear é aplicar conhecimentos adquiridos em desenvolv
 
 Deploy do site no vercel: [BioWear Apparel](https://biowear-apparel.vercel.app/).
 
-## Desenvolvedores
+## 👨‍💻 Desenvolvedores
 
-Lucas Cavalcante 562857
-Matheus Rodrigues 561689
-Caio Nascimento 561383
-Manoah Leão 563713
+| Nome                           | RM's                                              |
+| ------------------------------ | ------------------------------------------------- |
+| Caio Nascimento Battista       | 561383                                            |
+| Manoah Leão                    | 563713                                            |  
+| Matheus Rodrigues              | 561689                                            |  
+| Lucas Cavalcante               | 562857                                            |  
